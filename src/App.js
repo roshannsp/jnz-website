@@ -9,6 +9,8 @@ import TopNav from './components/TopNav'
 import Footer from './components/Footer'
 import Body from './components/Body'
 import Jenosize from './pages/Jenosize'
+import Restaurants from './pages/Restaurants'
+import Map from './pages/Map'
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
         <Switch>
           <Route path="/Jenosize">
             <Jenosize />
+          </Route>
+          <Route path="/Restaurants">
+            <Restaurants />
+          </Route>
+          <Route path="/Map">
+            <Map />
           </Route>
           <Route exec path="/">
             <Redirect to="/Jenosize" />
